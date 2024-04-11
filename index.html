@@ -19,6 +19,7 @@
       <meta property="og:image:width" content="1200">
       <meta property="og:image:height" content="630">
       <meta name="twitter:card" content="summary_large_image">
+      <link rel="stylesheet" type="text/css" href="css/fonts.css" />
       <link rel="stylesheet" type="text/css" href="css/main.css" />
       <noscript>  
         <style>    
@@ -28,14 +29,13 @@
   
       <script nonce="">
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+              });
         });
-    });
-});
+      });
       </script>
 <!--<script nonce="">
     window.C_CAPTCHA_IMPLEMENTATION = 'RECAPTCHA';
