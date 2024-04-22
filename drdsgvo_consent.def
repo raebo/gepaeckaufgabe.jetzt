@@ -44,8 +44,6 @@
                         Dieser Dienst wird von der Firma Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland (kurz: Google) bereitgestellt. Er lädt andere Dienste nach, insbesondere die nachfolgend genannten Dienste. Google erhält Verbindungsdaten Ihrer Internetnutzung und kann diese für die Optimierung seines Dienstes verwenden - dies gilt auch für alle folgenden Google-Dienste.
                         <h4>Google Analytics</h4>
                         Dieser Dienst wird von Google bereitgestellt. Damit kann Ihr Nutzungsverhalten unserer Webseite analysiert werden, was uns hilft, ein zielgenaueres Angebot zu erstellen.Der Dienst nutzt folgende Cookies (Name, Lebensdauer, Funktion): _ga, 2 Jahre, Kennung zur Identifikation eindeutiger Nutzer durch den Dienst; _gid, 1 Tag, Kennung zur tagesweisen Erkennung von Nutzern; _gat, 2 Stunden, Kennung dass Datenerfassung durch den Dienst erfolgt.
-                        <h4>Facebook Plugin</h4>
-                        Dieser Dienst wird bereitgestellt von Facebook , Inc., 1 Hacker Way, Menlo Park, CA 94025, USA ("Facebook"). Damit kann Ihr Nutzungsverhalten unserer Webseite analysiert und mit Ihrem Facebook-Konto, sofern Sie eines besitzen, verknüpt werden.Der Dienst nutzt folgende Cookies (Name, Lebensdauer, Funktion): _fbp, 3 Monate, Kennung zur Identifikation eindeutiger Nutzer durch den Dienst.
                         <div>
                         </div>
                     </div>
@@ -55,7 +53,7 @@
                 </div>		
 
                 <div class="impds" style="display: block;color: #222;text-align:center">
-                    <a style="color:#aaa" id="imp_link" href="/#impressum">Impressum22</a> | <a style="color:#aaa" id="dse_link" href="/#impressum">Datenschutzhinweise</a>
+                    <a style="color:#aaa" id="imp_link" href="/#impressum">Impressum</a> | <a style="color:#aaa" id="dse_link" href="/#impressum">Datenschutzhinweise</a>
                 </div>
             </div>
         </div> 
