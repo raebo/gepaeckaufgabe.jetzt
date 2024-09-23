@@ -1,0 +1,126 @@
+#worriesOuterBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    border: 1px solid green;
+
+
+    #worriesFirstRow {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            order: 1;
+            width: 100%;
+        }
+    }
+
+    #worriesSndRow {
+        order: 2;
+        width: 100%;
+
+        #worriesInnerBox {
+            display: flex;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            border: 1px solid green;
+
+            .sndRowBoxItem {
+                width: 12%;
+                padding: 20px;
+            }
+            .sndRowBoxItem--halfCircleLeft {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+                @media screen and (min-width: 768px) {
+                    width: 1%;
+                    border: 1px solid blue;
+                    align-self: stretch;
+                }
+
+                .halfCircleLeft {
+                    /*position: relative;*/
+                    float: left;
+                    width: 35px;
+                    height: 15px;
+                    border-radius: 20px 20px 0 0;
+                    background-color: #3d4176;
+                    z-index: 10;
+                    transform-origin: bottom center;
+                    transform: rotate(90deg);
+                }
+            }
+
+            #sndRowOne {
+                background-color: #3d4176;
+            }
+
+            #sndRowTwo {
+                background-color: #fcae8d;
+
+                .halfCircleLeft {
+                    background-color: #3d4176;
+                    margin-left: -38px;
+                }
+
+                @media screen and (min-width: 768px) {
+                    width: 0%;
+                    border: 0 solid blue;
+                }
+            }
+
+            #sndRowFour {
+                background-color: #fcae8d;
+                .halfCircleLeft {
+                    background-color: #6f73aa;
+                }
+
+                @media screen and (min-width: 768px) {
+                    width: 0%;
+                    border: 0 solid blue;
+            }
+            .sndRowBoxItem--halfCircleTop {
+                @media screen and (max-width: 768px) {
+                    width: 1%;
+                    border: 1px solid blue;
+                }
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #worriesThrdRow {
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            order: 3;
+            width: 100%;
+        }
+    }
+}

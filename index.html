@@ -20,6 +20,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/fonts.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/flexWorries.css" />
         <link rel="stylesheet" type="text/css" href="css/drdsgvo.css" />
 
         <noscript>  
@@ -49,9 +50,9 @@
                 var ca = document.cookie.split(';');
                 for (var i = 0; i < ca.length; i++) {
                     var c = ca[i];
-                    while (c.charAt(0) == ' ')
+                    while (c.charAt(0) === ' ')
                         c = c.substring(1, c.length);
-                    if (c.indexOf(nameEQ) == 0)
+                    if (c.indexOf(nameEQ) === 0)
                         return c.substring(nameEQ.length, c.length);
                 }
                 return null;
@@ -59,7 +60,7 @@
 
                 function drdsgvo_createPopup() {
                                         var da = document.getElementById("drdsgvo_div");
-                                        if (da && da != null) {
+                                        if (da) {
                                                                     drdsgvo_callback1();
                                                                     return true;
                                                                 }
@@ -79,7 +80,7 @@
                 var drdsgvodone = 0;
                 var lastprop = "";
                 function drdsgvof(force) {
-                    if (drdsgvodone == 1 && force != 1) {
+                    if (drdsgvodone === 1 && force !== 1) {
                         return;
                     }
                     $("#imp_link").attr("href", drdsgvo_imp_link);
@@ -541,11 +542,242 @@
                         </div>
                     </div>
                 </div>
-            </section><a id="sorgen" aria-hidden="true" style="visibility:hidden;">
+            </section>
             </a>
 
 
-            <section id="qisRNkJQ0wmX6Yn6" style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+            <section id="sectionFlexWorries">
+                <div id="worriesOuterBox">
+                    <div id="worriesFirstRow">
+                        Worries First Row
+                    </div>
+
+                    <div id="worriesSndRow">
+                        <div id="worriesInnerBox">
+                            <div class="sndRowBoxItem sndRowBoxItem--content" id="sndRowOne">
+                                <div>
+                                    <div id="jRi7a87Y7BiPwinK" style="display:grid;position:relative;grid-area:3 / 5 / 4 / 6;">
+                                        <div id="koT1pg9XqJipIHd9" style="display:grid;position:relative;grid-area:2 / 2 / 5 / 4;">
+                                            <div id="eYN2bVISpP79nwFT" style="z-index:21;">
+                                                <div id="RGPMQopDcwOFLqvC" style="padding-top:41.01526755%;transform:rotate(0deg);">
+                                                    <div id="VcoTBeUiC5JUykmc" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="tzu9YyYmh33gSman" viewBox="0 0 27.1561 11.1381" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="iEhAWFyc2FM3K50P" style="transform:scale(1, 1);"><g id="DefqSbFi4hBse4F8" style="clip-path:url(#DXEMABRO8fpscfRx);"><clipPath id="DXEMABRO8fpscfRx"><path d="M1.58257441,0 L25.57352491,0 C25.99324974,0 26.39578373,0.16673504 26.69257401,0.46352531 26.98936428,0.76031559 27.15609932,1.16284958 27.15609932,1.58257441 L27.15609932,9.55557199 C27.15609932,9.97529682 26.98936428,10.37783081 26.69257401,10.67462109 26.39578373,10.97141136 25.99324974,11.1381464 25.57352491,11.1381464 L1.58257441,11.1381464 C1.16284958,11.1381464 0.76031559,10.97141136 0.46352531,10.67462109 0.16673504,10.37783081 0,9.97529682 0,9.55557199 L0,1.58257441 C0,1.16284958 0.16673504,0.76031559 0.46352531,0.46352531 0.76031559,0.16673504 1.16284958,0 1.58257441,0 Z">
+                                                    </path>
+                                                    </clipPath><path id="qsoLnns9nD2eE6K4" d="M1.58257441,0 L25.57352491,0 C25.99324974,0 26.39578373,0.16673504 26.69257401,0.46352531 26.98936428,0.76031559 27.15609932,1.16284958 27.15609932,1.58257441 L27.15609932,9.55557199 C27.15609932,9.97529682 26.98936428,10.37783081 26.69257401,10.67462109 26.39578373,10.97141136 25.99324974,11.1381464 25.57352491,11.1381464 L1.58257441,11.1381464 C1.16284958,11.1381464 0.76031559,10.97141136 0.46352531,10.67462109 0.16673504,10.37783081 0,9.97529682 0,9.55557199 L0,1.58257441 C0,1.16284958 0.16673504,0.76031559 0.46352531,0.46352531 0.76031559,0.16673504 1.16284958,0 1.58257441,0 Z" style="fill:#ffffff;opacity:1.0;">
+                                                    </path><path id="ncEVXHMgVigm7nR3" d="M1.58257441,0 L25.57352491,0 C25.99324974,0 26.39578373,0.16673504 26.69257401,0.46352531 26.98936428,0.76031559 27.15609932,1.16284958 27.15609932,1.58257441 L27.15609932,9.55557199 C27.15609932,9.97529682 26.98936428,10.37783081 26.69257401,10.67462109 26.39578373,10.97141136 25.99324974,11.1381464 25.57352491,11.1381464 L1.58257441,11.1381464 C1.16284958,11.1381464 0.76031559,10.97141136 0.46352531,10.67462109 0.16673504,10.37783081 0,9.97529682 0,9.55557199 L0,1.58257441 C0,1.16284958 0.16673504,0.76031559 0.46352531,0.46352531 0.76031559,0.16673504 1.16284958,0 1.58257441,0 Z" style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
+                                                    </path>
+                                                    </g>
+                                                    </g>
+                                                    </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="AxSMkhNqD6NHK3mb" style="z-index:22;">
+                                                <div id="rUi9Gc6DXX4vrP8N" style="padding-top:177.65769277%;transform:rotate(0deg);">
+                                                    <div id="LZw0GX0AjT2La5Cv" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="UuJ3wkr1Wxl6tQlI" viewBox="0 0 5.4037 9.6" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="ApBOcuabrNHiFn9V" style="transform:scale(1, 1);"><g id="hvsbJCbbTvZbKTjs" style="clip-path:url(#c13QAwdZpWZZ8xYg);"><clipPath id="c13QAwdZpWZZ8xYg"><path d="M1.18694174,0 L4.21670854,0 C4.87223836,0 5.40365028,0.53141192 5.40365028,1.18694174 L5.40365028,8.41305864 C5.40365028,8.72785516 5.27859785,9.02975844 5.05600309,9.2523532 4.83340834,9.47494795 4.53150506,9.60000038 4.21670854,9.60000038 L1.18694174,9.60000038 C0.87214522,9.60000038 0.57024194,9.47494795 0.34764719,9.25235319 0.12505243,9.02975844 0,8.72785516 0,8.41305864 L0,1.18694174 C0,0.53141192 0.53141192,0 1.18694174,0 Z">
+                                                    </path>
+                                                    </clipPath><path id="fXEsCLQHmOvWpxBl" d="M1.18694174,0 L4.21670854,0 C4.87223836,0 5.40365028,0.53141192 5.40365028,1.18694174 L5.40365028,8.41305864 C5.40365028,8.72785516 5.27859785,9.02975844 5.05600309,9.2523532 4.83340834,9.47494795 4.53150506,9.60000038 4.21670854,9.60000038 L1.18694174,9.60000038 C0.87214522,9.60000038 0.57024194,9.47494795 0.34764719,9.25235319 0.12505243,9.02975844 0,8.72785516 0,8.41305864 L0,1.18694174 C0,0.53141192 0.53141192,0 1.18694174,0 Z" style="fill:#f4804f;opacity:1.0;">
+                                                    </path><path id="XZfDiT2EUfsQhwU0" d="M1.18694174,0 L4.21670854,0 C4.87223836,0 5.40365028,0.53141192 5.40365028,1.18694174 L5.40365028,8.41305864 C5.40365028,8.72785516 5.27859785,9.02975844 5.05600309,9.2523532 4.83340834,9.47494795 4.53150506,9.60000038 4.21670854,9.60000038 L1.18694174,9.60000038 C0.87214522,9.60000038 0.57024194,9.47494795 0.34764719,9.25235319 0.12505243,9.02975844 0,8.72785516 0,8.41305864 L0,1.18694174 C0,0.53141192 0.53141192,0 1.18694174,0 Z" style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
+                                                    </path>
+                                                    </g>
+                                                    </g>
+                                                    </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="skNB4E3pRLRVVliO" style="z-index:20;">
+                                            <div id="C01kKRdWn6o1Kofq" style="padding-top:264.84055857%;transform:rotate(0deg);">
+                                                <div id="Xe2gzGGloSrIDGbd" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="AmvfH1xS6RaJLJx2" viewBox="0 0 2.8222 7.4744" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="cCGo5e6mWTcQn656" style="transform:scale(1, 1);"><g id="Y8doB0DfEu406n8N" style="clip-path:url(#xlQVb12b2JEydRuY);"><clipPath id="xlQVb12b2JEydRuY"><path d="M1.41111112,0 L1.41111112,0 C2.19044627,0 2.82222223,0.63177597 2.82222223,1.41111112 L2.82222223,6.06327796 C2.82222223,6.84261311 2.19044627,7.47438908 1.41111112,7.47438908 L1.41111112,7.47438908 C0.63177597,7.47438907 0,6.84261311 0,6.06327796 L0,1.41111112 C0,0.63177597 0.63177597,0 1.41111112,0 Z">
+                                                </path>
+                                                </clipPath><path id="iASjY3n2bfZYXbZi" d="M1.41111112,0 L1.41111112,0 C2.19044627,0 2.82222223,0.63177597 2.82222223,1.41111112 L2.82222223,6.06327796 C2.82222223,6.84261311 2.19044627,7.47438908 1.41111112,7.47438908 L1.41111112,7.47438908 C0.63177597,7.47438907 0,6.84261311 0,6.06327796 L0,1.41111112 C0,0.63177597 0.63177597,0 1.41111112,0 Z" style="fill:#000000;opacity:1.0;">
+                                                </path><path id="uTGnzYDweKJA6E4U" d="M1.41111112,0 L1.41111112,0 C2.19044627,0 2.82222223,0.63177597 2.82222223,1.41111112 L2.82222223,6.06327796 C2.82222223,6.84261311 2.19044627,7.47438908 1.41111112,7.47438908 L1.41111112,7.47438908 C0.63177597,7.47438907 0,6.84261311 0,6.06327796 L0,1.41111112 C0,0.63177597 0.63177597,0 1.41111112,0 Z" style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
+                                                </path>
+                                                </g>
+                                                </g>
+                                                </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>
+                                        <h3>Streit und Stress</h3>
+                                    </p>
+                                    <p>
+                                        Wie verhindern wir Streitigkeiten und eine Eskalation der Situation?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--halfCircleLeft" id="sndRowTwo">
+                                <div class="halfCircleLeft"></div>
+                            </div>
+
+                            <div class="sndRowBoxItem sndRowBoxItem--halfCircleTop" id="sndRowTwoOne">
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--content" id="sndRowThree">
+                                Zukunft
+                                <div id="idJeSnMOaGwX8vi2" style="display:grid;position:relative;grid-area:3 / 5 / 4 / 6;">
+                                    <div id="Wx7aodwf5FRiWQgM" style="z-index:29;">
+                                        <div id="cT5lIQobZgkSLQRH" style="padding-top:97%;transform:rotate(0deg);">
+                                            <div id="zSbyQ3BgO2NmeHw2" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                                <div id="XPxzhiy8RBfPnXhU" style="width:100%;height:100%;opacity:1.0;">
+                                                    <div id="LapvECTah0UgzmVf" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                        <div id="v3cJ6hFK7roJq0tI" style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: none;"><img src="./img/93fe6453fb42a495ef4343091e0c625d.svg" alt="Light Bulb Icon" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="CVqoMdxQSSNwir06" style="z-index:28;">
+                                        <div id="jbCETdsChPQc1fS7" style="padding-top:71.49809274%;transform:rotate(0deg);">
+                                            <div id="cImsKJ1xlvOsGDcs" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="wVnGDOVhWDOSM788" viewBox="0 0 25.6533 18.3416" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="OfWoroPBhWKxhhH6" style="transform:scale(1, 1);"><path id="iXlG8Xbpqcwv7I77" d="M0,0 L25.65332168,0 L25.65332168,18.34163572 L0,18.34163572 Z" style="fill:#fcae8d;opacity:1.0;">
+                                            </path>
+                                            </g>
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="JVuYkoxMsIGS1af2" style="z-index:27;">
+                                        <div id="u51JGHmhCARS0OG6" style="padding-top:91.5%;transform:rotate(0deg);">
+                                            <div id="Kv5YANU1Fb43qLOc" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                                <div id="ItntSUWU21L2x2OF" style="width:100%;height:100%;opacity:1.0;">
+                                                    <div id="GaKzYP8NBgc1ZH3Z" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                        <div id="eb5kstbZryWFsvBW" style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100.49619999% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: none;"><img src="./img/160a13f5108086e5ed898a24e7d9df6e.svg" alt="Heart on Hand Icon" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--halfCircleLeft" id="sndRowFour">
+                                <div class="halfCircleLeft"></div>
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--halfCircleTop" id="sndRowFourOne">
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--content" id="sndRowFive">
+                                Kinder
+                                <div id="M3bb0QMt7JvfwAlo" style="display:grid;position:relative;grid-area:4 / 5 / 8 / 9;">
+                                    <div id="le02OZNd4OUhc8tP" style="z-index:18;">
+                                        <div id="AvJgfmi1ROf23XIP" style="padding-top:85.875%;transform:rotate(0deg);">
+                                            <div id="nqNA7DCO20n0agF9" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                                <div id="ZyLvEND7HYdVYjLo" style="width:100%;height:100%;opacity:1.0;">
+                                                    <div id="KC8P3NnbouJuHpLB" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                        <div id="ODIcecN3epx0iCVc" style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: none;"><img src="./img/44044eed6f536ee308ed4f2d62400132.svg" alt="Baby Icon" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="AAOEZlJg6gq6V8eD" style="z-index:15;">
+                                        <div id="EsR8lPJsex2kn0NW" style="padding-top:97.53208292%;transform:rotate(0deg);">
+                                            <div id="cIv5kyOT3bME5HXk" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="FatVxgeyaMP3Hg1c" viewBox="0 0 65.6194 64.0" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="KHW5jyQdfQQc4s8k" style="transform:scale(1, 1);"><path id="CzcI8g3wxMV2UGms" d="M32.8097166,0 C14.68941056,0 0,14.32688808 0,32 C0,49.67311096 14.68941056,64 32.8097166,64 C50.93002166,64 65.6194332,49.67311096 65.6194332,32 C65.6194332,14.32688808 50.93002166,0 32.8097166,0 Z" style="fill:#ffffff;opacity:1.0;">
+                                            </path>
+                                            </g>
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="e782uWIRwmuXva3T" style="z-index:24;">
+                                        <div id="fp8iFF9Ph2mW6vhu" style="padding-top:14.75691606%;transform:rotate(0deg);">
+                                            <div id="fRYDSOiOszSEzUAa" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="JCNGhxE1uopkB4vC" viewBox="0 0 18.252178574656682 2.693458672207214" preserveAspectRatio="none" style="display:block;width:100%;height:100%;overflow:visible;opacity:1.0;min-height:1px;stroke:#000000;fill:#000000;background:url('data:image/png;base64,');"><g id="Me5HrKhFpJkvxP6W"><path d="M0.04654497,2.19562982 L18.2056336,0.49782885" style="fill:none;stroke-width:1px;stroke-linecap:butt;">
+                                            </path>
+                                            </g>
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="WbpFWxxno4D1ktNx" style="z-index:16;">
+                                        <div id="ll9zwzwlU6fWEoLd" style="padding-top:124.54829258%;transform:rotate(0deg);">
+                                            <div id="nLzP9xJS7Aq7Vtoq" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="z5vV9S4L47u6NPPX" viewBox="0 0 64.0 79.7109" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="AbT4ylZW4xL0MV07" style="transform:scale(1, 1);"><path id="d0033VCNhwk0eyGX" d="M32,0 C14.32688808,0 0,17.84389449 0,39.85545363 C0,61.86701157 14.32688808,79.71090725 32,79.71090725 C49.67311096,79.71090725 64,61.86701157 64,39.85545363 C64,17.84389449 49.67311096,0 32,0 Z" style="fill:#ffffff;opacity:1.0;">
+                                            </path>
+                                            </g>
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="U285RGQ9eA4BesF6" style="z-index:17;">
+                                        <div id="ni4NarDF8Fe6t4wu" style="padding-top:103.35692107%;transform:rotate(0deg);">
+                                            <div id="yv8MkuljjsuLRrdg" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="p7Ng1wtJxl6mHHp4" viewBox="0 0 64.0 66.1484" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="MjfwgJ4qcq8nH5HF" style="transform:scale(1, 1);"><path id="kySi46670kJJW38q" d="M32,0 C14.32688808,0 0,14.80783041 0,33.07421474 C0,51.34059809 14.32688808,66.14842948 32,66.14842948 C49.67311096,66.14842948 64,51.34059809 64,33.07421474 C64,14.80783041 49.67311096,0 32,0 Z" style="fill:#ffffff;opacity:1.0;">
+                                            </path>
+                                            </g>
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--halfCircleLeft" id="sndRowSix">
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--halfCircleTop" id="sndRowSixOne">
+                            </div>
+                            <div class="sndRowBoxItem sndRowBoxItem--content" id="sndRowSeven">
+                                Zeit und Geld
+
+                                <div id="WIXsq7U7sGlmAFVe" style="display:grid;position:relative;">
+                                    <div id="Vo8iYa4Z8JDnyetn" style="display:grid;position:relative;grid-area:3 / 3 / 4 / 4;">
+                                        <div id="Ycs04PPfzYERsRKk" style="z-index:11;">
+                                            <div id="oXu2NMqoHr4oIwRY" style="padding-top:186.46112601%;transform:rotate(0deg);">
+                                                <div id="XKdIW4oicU0XfSGy" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                                    <div id="LqpkyJH1SeWmBaXD" style="width:100%;height:100%;opacity:1.0;">
+                                                        <div id="YppwUEsZUhtc6A32" style="transform:scale(1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                            <div id="h5E4wz5Zo82s9mH1" style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: none;"><img src="./img/8a554e970438147e39314c70551a8835.png" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                                            </div><svg id="EHQVgHrZH9bzwj0T" viewBox="0 0 35.13051788263417 65.50475921547469" preserveAspectRatio="none" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="ZxKpTpF5t4RmQlrN" style="transform:scale(1, 1);"><g id="YMa0TIA0ydwuMeoJ" style="clip-path:url(#AilLDaVoFCmnVcNB);"><clipPath id="AilLDaVoFCmnVcNB"><path d="M0,0 L35.13051605,0 L35.13051605,65.50476074 L0,65.50476074 Z">
+                                                        </path>
+                                                        </clipPath><path id="jmt1F8msIS4ITYmB" d="M0,0 L35.13051605,0 L35.13051605,65.50476074 L0,65.50476074 Z" style="fill:none;stroke:transparent;">
+                                                        </path>
+                                                            <path id="hGrgvMojP54FtERU" d="M0,0 L35.13051605,0 L35.13051605,65.50476074 L0,65.50476074 Z" style="fill:none;stroke-linecap:butt;vector-effect:non-scaling-stroke;stroke:#000000;">
+                                                        </path>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="EMi7YnqN8kzGqZ19" style="display:grid;position:relative;grid-area:3 / 2 / 5 / 5;">
+                                            <div id="mgooX4OFhs0uPQDY" style="z-index:9;">
+                                                <div id="RWBVRwvEz04RFPQP" style="padding-top:91.5%;transform:rotate(0deg);">
+                                                    <div id="mrmp8p330jQkQUyU" style="position:absolute;top:0px;left:0px;width:100%;height:100%;">
+                                                        <div id="bS4qcHLKmBVnod45" style="width:100%;height:100%;opacity:1.0;">
+                                                            <div id="xZvykq1e4nIjqQpx" style="transform:scale(-1, 1);width:100%;height:100%;overflow:hidden;position:relative;">
+                                                                <div id="aj8VVV7869uYrzDh" style="width: calc(100% * max(1, var(--scale-fill, 1))); height: calc(100.49619999% / min(1, var(--scale-fill, 1))); position: absolute; top: 50%; left: 50%; opacity: 1; animation: none;"><img src="./img/160a13f5108086e5ed898a24e7d9df6e.svg" alt="Heart on Hand Icon" loading="lazy" style="width:100%;height:100%;display:block;object-fit:cover;object-position:50% 50%;transform:translate(-50%, -50%) rotate(0deg);">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="QWX6LfounX9AEyI2" style="z-index:10;">
+                                                <div id="EJYXsnIm0zJeIVK3" style="padding-top:77.96610169%;transform:rotate(0deg);">
+                                                    <div id="ABSHz87um64WbQnt" style="position:absolute;top:0px;left:0px;width:100%;height:100%;"><svg id="HKxdifbesmWxuDho" viewBox="0 0 11.6715 9.0998" style="width:100%;height:100%;opacity:1.0;overflow:hidden;position:absolute;top:0%;left:0%;background:url('data:image/png;base64,');"><g id="U9sINGHzvk1VvTav" style="transform:scale(1, 1);">
+                                                        <path id="RLIs3JeaAQ1urpsA" d="M0,0 L11.67148588,0 L11.67148588,9.09980255 L0,9.09980255 Z" style="fill:#f4804f;opacity:1.0;">
+                                                    </path>
+                                                    </g>
+                                                    </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="worriesThrdRow">
+                        Thrd Row
+                    </div>
+                </div>
+            </section>
+            <section id="sectionYourWorries" style="position:relative;overflow:hidden;display:grid;align-items:center;grid-template-columns:auto 100rem auto;z-index:0;margin-top:-1px;">
+
+
+
                 <div id="qVF7L7PuHnNiVBlN" style="grid-area:1 / 1 / 2 / 4;display:grid;position:absolute;min-height:100%;min-width:100%;">
                     <div id="EUueceoHHp3RJBvd" style="z-index:0;">
                         <div id="CVbFrGievUle0oqJ" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
@@ -1856,8 +2088,10 @@
                             <div id="jQOGF7VCGJjy0RQv" style="z-index:6;">
                                 <div id="bQVhi2t97j9Etbvx" style="box-sizing:border-box;width:100%;height:100%;transform:rotate(0deg);">
                                     <div id="NBpiEoZ4XKsMMh83" style="opacity:1.0;display:flex;box-sizing:border-box;flex-direction:column;justify-content:flex-start;width:100%;height:100%;">
-                                        <p id="IFoGx9z3O7axpFbY" style="color:#3d4176;font-family:YAFdtQi73Xs-0;line-height:1.3946353em;"><span id="ARF6axPJcKc70VlQ" style="color:#3d4176;">
-                                          <a href="tel:+491752694488">+49 175 2694488</a>
+                                        <p id="IFoGx9z3O7axpFbY" style="color:#3d4176;font-family:YAFdtQi73Xs-0;line-height:1.3946353em;">
+                                            <span id="ARF6axPJcKc70VlQ" style="color:#3d4176;">
+                                                <a href="tel:+491752694488">+49 175 2694488</a>
+                                            </span>
                                         </p>
                                     </div>
                                 </div>
