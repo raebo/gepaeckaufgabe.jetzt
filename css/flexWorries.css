@@ -8,7 +8,6 @@
     width: 100%;
     max-width: 1200px;
     padding: 20px;
-    border: 1px solid green;
 
 
     #worriesFirstRow {
@@ -89,6 +88,9 @@
                     width: 0%;
                     border: 0 solid blue;
                 }
+            }
+            #sndRowTwoOne {
+                background-color: #fcae8d;
             }
 
             #sndRowFour {
