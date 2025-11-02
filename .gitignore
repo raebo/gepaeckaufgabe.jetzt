@@ -1,0 +1,58 @@
+# Hugo default ignore patterns
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+/assets/.eslintrc.json
+
+.hugo_build.lock
+
+# Hugo crash files
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+# VS Code
+.vscode/
+*.swp
+*.swo
+*~
+
+# IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+/bower_components/
+/.pnpm-store/
+
+# Hugo modules
+/pkg/
