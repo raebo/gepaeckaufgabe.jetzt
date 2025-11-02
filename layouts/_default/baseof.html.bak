@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "de" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+    {{ $styles := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+  </head>
+  <body>
+<!--  {{ partial "header.html" . }}-->
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+<!--  {{ partial "footer.html" . }}-->
+
+  <!-- Move TypeScript compilation to scripts.html partial -->
+<!--  {{ partial "scripts.html" . }}-->
+  </body>
+</html>

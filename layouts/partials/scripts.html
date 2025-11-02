@@ -1,0 +1,24 @@
+<!-- TypeScript compilation -->
+{{ $tsOptions := dict
+"target" "es2015"
+"module" "esnext"
+"strict" true
+"sourceMap" "inline"
+}}
+
+{{ if hugo.IsProduction }}
+{{ $tsOptions = merge $tsOptions (dict
+"minify" true
+"sourceMap" ""
+) }}
+{{ end }}
+
+{{ $ts := resources.Get "ts/main.ts" | js.Build $tsOptions }}
+
+{{ if hugo.IsProduction }}
+{{ $ts = $ts | fingerprint }}
+{{ end }}
+
+<script src="{{ $ts.Permalink }}" {{ if hugo.IsProduction }}integrity="{{ $ts.Data.Integrity }}"{{ end }}></script>
+
+<!-- Other scripts can go here -->

@@ -1,0 +1,43 @@
+{{ define "main" }}
+<section class="hero bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl font-bold mb-6">{{ .Site.Params.hero.title | default "Welcome to My Site" }}</h1>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">
+      {{ .Site.Params.hero.subtitle | default "This is my custom Hugo theme" }}
+    </p>
+    <a href="{{ .Site.Params.hero.cta_link | default "/about" }}"
+    class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+    {{ .Site.Params.hero.cta_text | default "Learn More" }}
+    </a>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Recent Posts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range first 6 (where .Site.RegularPages "Type" "posts") }}
+      <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+        {{ if .Params.image }}
+        <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="w-full h-48 object-cover">
+        {{ end }}
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3">
+            <a href="{{ .RelPermalink }}" class="text-gray-800 hover:text-blue-600 transition-colors">
+              {{ .Title }}
+            </a>
+          </h3>
+          <p class="text-gray-600 mb-4">{{ .Summary | truncate 100 }}</p>
+          <div class="flex justify-between items-center text-sm text-gray-500">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+            </time>
+            <span>{{ .ReadingTime }} min read</span>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

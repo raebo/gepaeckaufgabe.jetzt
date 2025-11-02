@@ -1,0 +1,250 @@
+// Variables
+$primary-color: #007acc;
+$secondary-color: #764ba2;
+$text-color: #333;
+$color-important: #000;
+$background-light: #f8f9fa;
+$spacing-unit: 1rem;
+$breakpoint-md: 768px;
+
+@import '_fonts';
+@import '_header';
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-unit * 1.25;
+}
+
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #f1e7d6, #f1e7d6 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Layout components
+.container {
+  @include container;
+}
+
+// Header styles
+header {
+  background: #f1e7d6;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-unit 0;
+
+  .logo {
+    a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: $text-color;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: $spacing-unit * 2;
+
+    @include responsive($breakpoint-md) {
+      flex-direction: column;
+      gap: $spacing-unit;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: $spacing-unit;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-10px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover {
+        color: $primary-color;
+
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $primary-color;
+        transition: width 0.3s ease;
+      }
+    }
+  }
+}
+
+// Main content
+main {
+  margin-top: 80px;
+
+  @include responsive($breakpoint-md) {
+    margin-top: 70px;
+  }
+}
+
+// Section styles
+section {
+  padding: $spacing-unit * 5 0;
+  min-height: 100vh;
+  @include flex-center;
+
+  @include responsive($breakpoint-md) {
+    padding: $spacing-unit * 3 0;
+    min-height: auto;
+  }
+}
+
+.hero-section {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
+    background-size: cover;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: $spacing-unit * 1.5;
+    font-weight: 700;
+
+    @include responsive($breakpoint-md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: $spacing-unit * 2;
+    opacity: 0.9;
+  }
+}
+
+.about-section {
+  background: $background-light;
+}
+
+.services-section {
+  background: white;
+}
+
+.contact-section {
+  background: $background-light;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: $spacing-unit; }
+.mt-2 { margin-top: $spacing-unit * 2; }
+.mb-1 { margin-bottom: $spacing-unit; }
+.mb-2 { margin-bottom: $spacing-unit * 2; }
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
