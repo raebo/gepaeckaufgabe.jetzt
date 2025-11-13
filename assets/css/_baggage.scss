@@ -1,0 +1,32 @@
+#sectionYourBaggage {
+  #yourBaggageContainer {
+    #yourBaggageHeadline {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+   .yourBaggageWrapper {
+     .yourBaggageItem {
+
+       &.yourBaggageItem--img {
+         border: 1px solid RED;
+       }
+       &.yourBaggageItem--img--expactations {
+         border: 1px solid RED;
+         background-image: url('/images/your_baggage_image.png');
+       }
+      &.yourBaggageItem--headline{
+        h3 {
+          text-align: center
+        }
+      }
+
+      &.yourBaggageItem--text {
+        p {
+          text-align: center
+        }
+      }
+    }
+   }
+  }
+}

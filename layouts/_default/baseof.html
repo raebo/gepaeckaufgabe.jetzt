@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "de" }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            {{- if .IsHome -}}
-            {{ .Site.Title }}
-            {{- else -}}
-            {{ .Title }} | {{ .Site.Title }}
-            {{- end -}}
-        </title>
-      {{ $styles := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
-    </head>
-    <body>
-      {{ partial "header.html" . }}
-      {{ partial "hero.html" . }}
-      <main>
-          {{ block "main" . }}{{ end }}
-      </main>
+<html lang="{{ .Site.LanguageCode | default " de" }}">
 
-      {{ partial "footer.html" . }}
-      {{ partial "scripts.html" . }}
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{- if .IsHome -}}
+    {{ .Site.Title }}
+    {{- else -}}
+    {{ .Title }} | {{ .Site.Title }}
+    {{- end -}}
+  </title>
+  {{ $styles := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+  {{ partial "hero.html" . }}
+  {{ partial "your_baggage.html" . }}
+  {{ partial "approach.html" . }}
+  {{ partial "prices.html" . }}
+  {{ partial "references.html" . }}
+  {{ partial "personal.html" . }}
+  {{ partial "divider_bottom.html" . }}
+  {{ partial "lets_talk.html" . }}
+  {{ partial "impressum.html" . }}
+  {{ partial "footer.html" . }}
+  {{ partial "scripts.html" . }}
+</body>
+
 </html>

@@ -1,5 +1,5 @@
 ---
-title: "Welcome to My Site"
+title: "CHECK Welcome to My Site"
 date: 2024-01-15
 description: "A amazing one-page website"
 ---

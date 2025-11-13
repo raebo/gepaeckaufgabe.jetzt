@@ -1,0 +1,67 @@
+#sectionImpressum {
+  background-color: $background-color-darker;
+
+  #impressumContainer {
+    #impressumHeadline {
+      margin: 0 5%;
+
+      h2 {
+        color: rgb(61, 65, 118);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: $headline-font-size;
+        letter-spacing: 1px;
+      }
+    }
+
+    .impressumWrapper {
+      margin: 0 5%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      .impressumItem {
+        color: $content-color;
+
+        &.impressumItem--first {
+          flex-basis: 50%;
+
+          ul {
+            list-style-type: none;
+            padding-left: 0;
+
+            a {
+              color: $content-color;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            li {
+              margin-bottom: 1px;
+            }
+
+            li.headline {
+              margin-top: 15px;
+            }
+          }
+
+        }
+
+        &.impressumItem--second {
+          flex-basis: 50%;
+
+          p {
+            margin-bottom: 0;
+          }
+
+          p.headline {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
