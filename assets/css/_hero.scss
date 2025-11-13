@@ -1,0 +1,68 @@
+#sectionHero {
+  width: 100%;
+  #heroContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    flex: 1;
+    min-height: 600px;
+    width: 80%;
+    max-width: 1400px;
+
+    .hero-item {
+      &.hero-item--image {
+        border: 1px solid RED;
+        background-image: url('/images/hero_wine_nature.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 600px;
+        //flex: 1 0 auto; // grow, don't shrink, base on auto height
+      }
+
+      &.hero-item--text {
+        // Styles for text container
+       #heroContainerRight {
+          display: flex;
+          flex-direction: column;
+
+
+          .item {
+
+          }
+
+          .item-first-row {
+            h1 {
+
+            }
+          }
+          .item-second-row {
+            h3 {
+
+            }
+          }
+          .item-third-row {
+
+          }
+          .item-fourth-row {
+
+          }
+          .item-fifth-row {
+
+          }
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 768px){
+    #heroContainer {
+      flex-direction: column;
+    }
+
+  }
+}
