@@ -3,7 +3,7 @@ $primary-color: #007acc;
 $secondary-color: #764ba2;
 $text-color: #333;
 $color-important: #000;
-$background-light: #f8f9fa;
+$background-color-light: rgb(241, 231, 214);
 $background-color-darker: rgb(232, 227, 222);
 $spacing-unit: 1rem;
 $breakpoint-md: 768px;
@@ -45,7 +45,6 @@ $headline-font-size: 300%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $background-color-darker;
 }
 
 html {
@@ -57,7 +56,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   color: #333;
-  background: linear-gradient(135deg, #f1e7d6, #f1e7d6 100%);
+  //background: $background-color-light;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -71,9 +70,9 @@ body {
 
 // Header styles
 header {
-  background: #f1e7d6;
+  //background: #f1e7d6;
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
@@ -81,7 +80,7 @@ header {
   transition: all 0.3s ease;
 
   &.scrolled {
-    background: rgba(255, 255, 255, 0.98);
+    //background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
   }
 }
@@ -223,17 +222,6 @@ section {
   }
 }
 
-.about-section {
-  background: $background-light;
-}
-
-.services-section {
-  background: white;
-}
-
-.contact-section {
-  background: $background-light;
-}
 
 // Utility classes
 .text-center {

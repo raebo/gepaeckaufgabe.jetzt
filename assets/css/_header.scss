@@ -1,6 +1,6 @@
 #sectionHeader {
   header {
-    background: #f1e7d6;
+    background: $background-color-light;
     padding: 0 2rem;
 
     .header-desktop {
@@ -33,7 +33,8 @@
         flex-direction: column; // Stack vertically
         align-items: flex-start; // Or center, depending on your design
 
-        h1, h3 {
+        h1,
+        h3 {
           margin: 0;
           padding: 0;
           line-height: 1; // Also reset line-height if needed
