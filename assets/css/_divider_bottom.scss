@@ -1,0 +1,40 @@
+section #sectionDividerBottom {
+  background-color: $background-color-light;
+
+  #dividerBottomContainer {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; // CHANGED: row, not column
+    align-items: center; // Vertically center image/text
+
+    .dividerBottomItem {
+      flex: 1;
+
+      &--image {
+        background-image: url('/images/divider_luggage.png');
+        background-size: contain; // Show all of the image
+        background-repeat: no-repeat;
+        background-position: left center;
+        min-width: 120px; // Or whatever width your image actually needs
+        height: 160px; // Or desired height; adjust to fit your design
+        width: 140px;
+        //flex: 0 0 120px; // Prevent the image from stretching
+        margin-right: 24px; // Space between image and text
+      }
+
+      &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+        }
+
+        h2 {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

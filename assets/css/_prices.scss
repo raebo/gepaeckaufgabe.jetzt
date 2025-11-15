@@ -1,0 +1,43 @@
+section #sectionPrices {
+  // Styles for the overall prices section
+
+  #pricesContainer {
+    // Container for the entire prices content
+  }
+
+  .price-item {
+    // Base styles for price items
+
+    &--image {
+      // Styles for image block
+    }
+
+    &--text {
+      // Styles for text block
+
+      .item {
+        // Base styles for inner content rows and action row
+
+        &--content-row {
+
+          // Styles for content rows (h2, p, etc.)
+          h2 {
+            // Styles for the sub-headline
+          }
+
+          p {
+            // Styles for paragraph
+          }
+        }
+
+        &--action-row {
+
+          // Styles for the action row
+          a {
+            // Styles for the action link/button
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+section #sectionLetsTalk {
+  background-color: $background-color-darker;
+
+  .letsTalkContainer {
+    width: 60%;
+    margin: 0 auto;
+
+    .letsTalkItem {
+      &--headline {
+        h2 {
+          color: $color-important;
+        }
+      }
+
+      &--text {
+        p {
+          margin-top: 5px;
+        }
+      }
+
+      &--connect-row {
+        margin-top: 10px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: left 10% center; // shifts image right from left edge
+        padding-left: 40px; // Make room for the icon, adjust as needed
+
+        a {
+          padding-left: 10%;
+          color: $color-important;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &--connect-row-phone {
+        background-image: url('/images/lets_talk/lets_talk_phone.png');
+      }
+
+      &--connect-row-mail {
+        background-image: url('/images/lets_talk/lets_talk_at.png');
+      }
+
+      &--connect-row-instagramm {
+        background-image: url('/images/lets_talk/lets_talk_insta.png');
+      }
+
+      &--action-row-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        a {
+          display: inline-block;
+          width: 440px; // Set your desired width here
+          padding: 12px 0;
+          text-align: center;
+          background-color: $color-action; // Or your preferred button color
+          color: #fff; // Or another accessible contrast color
+          border: none;
+          border-radius: 999px; // Fully rounded corners
+          text-decoration: none;
+          font-size: 1em;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.2s;
+
+          &:hover,
+          &:focus {
+            background-color: darken($color-important, 8%);
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+  }
+}

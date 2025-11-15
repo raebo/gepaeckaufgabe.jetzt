@@ -3,6 +3,7 @@ $primary-color: #007acc;
 $secondary-color: #764ba2;
 $text-color: #333;
 $color-important: #000;
+$color-action: rgb(194, 77, 81);
 $background-color-light: rgb(241, 231, 214);
 $background-color-darker: rgb(232, 227, 222);
 $spacing-unit: 1rem;
@@ -18,6 +19,7 @@ $headline-font-size: 300%;
 @import '_prices';
 @import '_personal';
 @import '_references';
+@import '_divider_bottom';
 @import '_lets_talk';
 @import '_impressum';
 
