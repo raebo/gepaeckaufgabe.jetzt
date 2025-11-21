@@ -34,7 +34,7 @@
         align-items: flex-start; // Or center, depending on your design
 
         h1,
-        h3 {
+        h2 {
           margin: 0;
           padding: 0;
           line-height: 1; // Also reset line-height if needed
@@ -42,12 +42,10 @@
 
 
         h1 {
-          font-family: "Montserrat", sans-serif;
-          font-weight: 700;
           text-transform: uppercase;
         }
 
-        h3 {
+        h2 {
           font-family: "Montserrat", sans-serif;
           font-weight: 500;
         }

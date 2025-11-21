@@ -1,5 +1,6 @@
 #sectionHero {
   width: 100%;
+
   #heroContainer {
     display: flex;
     flex-direction: row;
@@ -24,42 +25,35 @@
       }
 
       &.hero-item--text {
+
         // Styles for text container
-       #heroContainerRight {
+        #heroContainerRight {
           display: flex;
           flex-direction: column;
 
 
-          .item {
-
-          }
+          .item {}
 
           .item-first-row {
-            h1 {
-
-            }
+            h1 {}
           }
+
           .item-second-row {
-            h3 {
-
-            }
+            h2 {}
           }
-          .item-third-row {
 
-          }
-          .item-fourth-row {
+          .item-third-row {}
 
-          }
-          .item-fifth-row {
+          .item-fourth-row {}
 
-          }
+          .item-fifth-row {}
         }
       }
     }
 
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     #heroContainer {
       flex-direction: column;
     }
