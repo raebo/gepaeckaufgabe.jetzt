@@ -1,33 +1,137 @@
 #sectionApproach {
-  #approachContainer {
+  background-color: $background-color-light;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;       /* vertical centering */
+  min-height: 55vh;         /* full viewport height */
+  padding: 2rem;             /* optional spacing on smaller screens */
+  box-sizing: border-box;
+
+  #approachWrapper {
+    max-width: 1200px;
+    width: 100%;
+
     #approachHeadline {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
+      h1 {
+        color: $color-important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: $h1-font-size-approach;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+      }
     }
 
-    .approachWrapper {
+    .approachContainer {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0;
+      flex-direction: row;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: center;
+      height: 440px;
+      margin-top: 2%;
+
       .approachItem {
+        flex: 1 1 300px;
+        height: 100%;
 
-        &.approachItem--img {
-          border: 1px solid RED;
-        }
+          .item {
 
-        &.approachItem--img--expactations {
-          border: 1px solid RED;
-          background-image: url('/images/your_baggage_image.png');
-        }
+            &--headline {
+              margin-top: 5%;
 
-        &.approachItem--headline {
-          h3 {
-            text-align: center
+              h3 {
+                text-align: center;
+                width: 75%;
+                margin: 0 auto;
+              }
+
+            }
+
+            &--text {
+              margin-top: 5%;
+
+              p {
+                text-align: center;
+                width: 75%;
+                margin: 0 auto;
+              }
+            }
+
+            &--img {
+              img {
+                width: 100%;          // scales to container width
+                height: 100%;         // scales to container height
+                object-fit: contain;    // fill container, crop if needed
+                object-position: center; // focus center of image
+                display: block;
+                padding-top: 10%;
+              }
+            }
+
+            &--img--coaching {
+              width: 50%;             // adjust to your layout
+              height: 150px;          // desired container height
+              margin: 0 auto;         // center horizontally
+              overflow: hidden;       // crop if necessary
+            }
+
+            &--img--body-coaching {
+              width: 50%;             // adjust to your layout
+              height: 150px;          // desired container height
+              margin: 0 auto;         // center horizontally
+              overflow: hidden;       // crop if necessary
+            }
+
+            &--img--rituals {
+              width: 40%;             // adjust to your layout
+              height: 150px;          // desired container height
+              margin: 0 auto;         // center horizontally
+              overflow: hidden;       // crop if necessary
+            }
+
+            &--img--nature {
+              width: 50%;             // adjust to your layout
+              height: 150px;          // desired container height
+              margin: 0 auto;         // center horizontally
+              overflow: hidden;       // crop if necessary
+            }
           }
-        }
 
         &.approachItem--text {
           p {
             text-align: center
           }
+        }
+
+        &--coaching {
+          background: rgb(87, 67, 70);
+          h3 { color:#FFF; }
+          p { color: #FFF; }
+        }
+
+        &--body-coaching {
+          background: rgb(190, 179, 150);
+          h3 { color: rgb(52, 48, 47); }
+          p { color: rgb(52, 48, 47); }
+        }
+
+        &--rituals {
+          background: rgb(146,135,76);
+          h3 { color: rgb(52, 48, 47); }
+          p { color: rgb(52, 48, 47); }
+        }
+
+        &--nature {
+          background: rgb(135,115,101);
+          h3 { color: #fff;}
+          p { color: #fff; }
         }
       }
     }

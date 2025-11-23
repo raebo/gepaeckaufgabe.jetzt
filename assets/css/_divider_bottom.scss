@@ -1,8 +1,10 @@
-section #sectionDividerBottom {
+#sectionDividerBottom {
   background-color: $background-color-light;
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   #dividerBottomContainer {
-    width: 60%;
+    width: 45%;
     margin: 0 auto;
     display: flex;
     flex-direction: row; // CHANGED: row, not column
@@ -12,25 +14,33 @@ section #sectionDividerBottom {
       flex: 1;
 
       &--image {
+        flex: 0 0 200px; /* flex-grow:0; flex-shrink:0; flex-basis:200px */
         background-image: url('/images/divider_luggage.png');
         background-size: contain; // Show all of the image
         background-repeat: no-repeat;
         background-position: left center;
-        min-width: 120px; // Or whatever width your image actually needs
+       // min-width: 100px; // Or whatever width your image actually needs
         height: 160px; // Or desired height; adjust to fit your design
-        width: 140px;
+        //width: 80px;
         //flex: 0 0 120px; // Prevent the image from stretching
         margin-right: 24px; // Space between image and text
       }
 
       &--text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex: 0 0 280px;
 
         h1 {
           margin-top: 10px;
+          font-size: $headline-font-size;
+          letter-spacing: $headline-letter-spacing;
+          text-transform: uppercase;
+          margin-top: 10%;
         }
+
+        h2 {
+          margin-top: 4%;
+        }
+          
       }
     }
   }

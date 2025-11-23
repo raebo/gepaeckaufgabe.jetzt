@@ -1,0 +1,85 @@
+#sectionReferences {
+  background-color: $background-color-light;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 63vh;
+  padding: 4rem;
+  box-sizing: border-box;
+
+  #referencesContainer {
+    max-width: 1200px;
+    width: 100%;
+
+    #referencesHeadline {
+      margin: 0;
+      padding: 0;
+
+      h1 {
+        color: $color-important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: $headline-font-size;
+        letter-spacing: 1px;
+      }
+    }
+    #referencesWrapper {
+      margin-top: 4%;
+      display: flex;
+      flex-direction: row;
+      gap: 0.3rem;
+      width: 100%;
+      align-items: flex-start;
+
+      .referencesStatements {
+        flex: 1.6;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+
+        .refStatement {
+          flex: 1 1 calc(50% - 0.5rem);
+          padding: 10px 5px;
+          text-align: center;
+
+          &--one {
+            padding: 4% 4%;
+            background: rgb(146, 135, 76);
+            color: rgb(255,255,255);
+
+          }
+          &--two {
+            padding: 6% 3%;
+            background: rgb(190, 179, 150);
+            color: rgb(0, 0, 0);
+
+          }
+          &--three {
+            padding: 4% 4%;
+            background: rgb(135, 115, 101);
+            color: rgb(0, 0, 0);
+
+          }
+          &--four {
+            padding: 6% 4%;
+            background: rgb(87, 67, 70);
+            color: rgb(255,255,255);
+
+          }
+        }
+      }
+
+      .referencePic {
+        flex: 1;
+
+        .reference_img_wrapper {
+          height: 504px;       // 🔥 add height so wrapper isn’t 0!
+          width: 100%;
+          background-image: url('/images/references/references_discussion_cropped.png');
+          background-size: cover;
+          background-position: left 70%; // can go beyond the <img> limitations
+        }
+      }
+    }
+  }
+}

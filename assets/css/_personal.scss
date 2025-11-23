@@ -1,60 +1,107 @@
-section #sectionPersonal {
-  background-color: $background-color-light;
+#sectionPersonal {
+  background-color: $background-color-darker;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;       /* vertical centering */
+  min-height: 63vh;         /* full viewport height */
+  padding: 2rem;             /* optional spacing on smaller screens */
+  box-sizing: border-box;
 
   #personalWrapper {
-    // Wrapper containing the entire content
-  }
+    max-width: 1200px;
+    width: 100%;
 
-  #personalHeadline {
-
-    // Headline section containing h2 and h3
-    h1 {
-      // Styles for main headline
-    }
-
-    h2 {
-      // Styles for subheadline
-    }
-  }
-
-  #personalFlexWrapper {
-    // Flexible wrapper for personal items (picture and text)
-  }
-
-  .personalItem {
-    // Base styles for each item in flex wrapper
-
-    &--picture {
-      // Styles for the picture item
-    }
-
-    &--text {
-
-      // Styles for the text item
-      p {
-        // Styles for paragraphs in text item
+    #personalHeadline {
+      h1 {
+        color: $color-important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: $headline-font-size;
+        letter-spacing: 1px;
       }
 
-      ul {
+      h2 {
+        margin-top: 1%;
+      }
+    }
 
-        // Styles for lists in text item
-        li {
-          // Styles for list items
+    #personalFlexWrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2rem;
+      flex-direction: row;
+      width: 100%;
+      justify-content: flex-start;
+
+      .personalItem {
+        flex: 1;
+        // Base styles for each item in flex wrapper
+
+        &--img {
+          flex: 35%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .img_wrapper {
+            width: 90%;          /* or % */
+            height: 450px;         /* defines how much of the image is visible */
+            margin: 0;        /* centers the wrapper in the page */
+            border-radius: 16px;   /* rounded corners */
+            overflow: hidden;      /* hide the rest of the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;     /* zoom/crop to fill wrapper */
+              object-position: center 80%;
+              display: block;
+            }
+          }
+        }
+
+        &--text {
+          flex: 65%;
+          padding-left: 4%;
+
+          p {
+            font-size: 95%;
+            line-height: 1.9em;
+            margin-top: 2%;
+          }
+
+          .edu-list {
+            padding-left: 0;
+            margin-left: 0;
+
+            li {
+              margin-left: 1.2rem;
+
+              a {
+                color:$body-color;
+                text-decoration: underline;
+                
+              }
+
+              &.title {
+                list-style: none;
+                font-weight: bold;
+                margin-left: 0;
+              }
+
+              &:not(.title) {
+                list-style: disc;
+              }
+            }
+          }
+
         }
       }
     }
   }
-
-  .item {
-    // Base styles for image items
-
-    &--img {
-      // Styles for image container
-
-      &--philosophy {
-        // Styles for the specific philosophy image
-      }
-    }
-  }
-
 }

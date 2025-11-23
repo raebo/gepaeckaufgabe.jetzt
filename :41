@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;   /* horizontal centering */
   align-items: flex-start;       /* vertical centering */
-  min-height: 57vh;         /* full viewport height */
+  min-height: 85vh;         /* full viewport height */
   padding: 2rem;             /* optional spacing on smaller screens */
   box-sizing: border-box;
 
@@ -34,12 +34,11 @@
 
 
       .price-item {
-        flex: 1 1 300px;
         // Base styles for price items
 
         &--image {
           display: flex;
-          justify-content: center;
+          justify-content: center:
           align-items: center;
 
           .img_wrapper {
@@ -64,8 +63,7 @@
         }
 
         &--text {
-          flex: 2 1 280px;
-          margin-top: 5%;
+          // Styles for text block
 
           .item {
             // Base styles for inner content rows and action row
@@ -78,40 +76,15 @@
               }
 
               p {
-                margin-top: 2%;
+                // Styles for paragraph
               }
             }
 
-            &--content-row-snd {
-              margin-top: 4%;
-            }
-
             &--action-row {
-              margin-top: 16%;
-              padding-bottom: 20px;
-              display: flex;
-              justify-content: left;
 
+              // Styles for the action row
               a {
-                display: inline-block;
-                width: 440px; // Set your desired width here
-                padding: 12px 0;
-                text-align: center;
-                background-color: $color-action; // Or your preferred button color
-                color: #fff; // Or another accessible contrast color
-                border: none;
-                border-radius: 999px; // Fully rounded corners
-                text-decoration: none;
-                font-size: 1em;
-                font-weight: bold;
-                cursor: pointer;
-                transition: background 0.2s;
-
-                &:hover,
-                &:focus {
-                  background-color: darken($color-important, 8%);
-                  text-decoration: none;
-                }
+                // Styles for the action link/button
               }
             }
           }

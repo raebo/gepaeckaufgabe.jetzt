@@ -10,14 +10,18 @@ $spacing-unit: 1rem;
 $breakpoint-md: 768px;
 $content-color: rgb(61, 65, 118);
 $headline-font-size: 300%;
+$headline-snd-font-size: 150%;
 $headline-letter-spacing: 0.05em;
 
 $base-height: 1.25rem; // or 20px, or whatever unit you like
 $base-font-size: 1rem; // 16px by default
 $h1-font-size: $base-font-size * 2;
 $h2-font-size: $base-font-size * 1.5;
+$h1-font-size-approach: 3rem;
+$h1-font-size-baggage: 3rem;
 $paragraph-spacing: $base-height;
 $section-spacing: $base-height * 2;
+$body-color: #333;
 
 @import '_fonts';
 @import '_header';
@@ -65,7 +69,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: $body-color;
   //background: $background-color-light;
   min-height: 100vh;
   display: flex;
