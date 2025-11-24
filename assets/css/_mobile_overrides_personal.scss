@@ -1,0 +1,68 @@
+
+@media (max-width: 768px) {
+  #sectionPersonal {
+    margin-top: 0;
+
+    #personalWrapper {
+      #personalHeadline {
+        margin-top: 10%;
+        h1 {
+          text-align: center;
+          line-height: 2.5rem;
+        }
+        h2 {
+          text-align: center;
+          line-height: 2.5rem;
+        }
+      }
+      #personalFlexWrapper {
+        margin-top: 5%;
+        flex-direction: column;
+
+        .personalItem {
+          &--image {
+            .img_wrapper {
+              width: 100%;
+              height: auto;
+
+              img {
+
+              }
+            }
+          }
+
+          &--text {
+
+            p {
+              text-align: center;
+              margin-top: 2%;
+            }
+
+            .edu-list {
+              margin-top: 5%;
+              text-align: center;
+
+              li {
+                list-style: none;
+                margin-top: 2%;
+                margin-left: 0; 
+                width: 90%;
+                a {
+
+                }
+
+                &.title {
+
+                }
+                &:not(.title) {
+                  list-style: none;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+
+@media (max-width: 768px) {
+  #sectionPrices {
+    max-height: 190vh;
+    margin-top: 0;
+
+    #pricesWrapper {
+      #priceHeadline {
+        h1 {
+          text-align: center;
+        }
+      }
+      #priceFlexWrapper {
+        flex-direction: column;
+
+        .price-item {
+          &--image {
+            .img_wrapper {
+              width: 100%;
+            }
+          }
+
+          &--text {
+
+            .item {
+              text-align: center;
+              flex: 1;
+
+
+              &--content-row {
+
+              }
+
+              &--action-row {
+                flex-direction: column;
+                
+                a {
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

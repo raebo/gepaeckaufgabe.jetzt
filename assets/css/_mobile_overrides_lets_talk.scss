@@ -1,0 +1,44 @@
+
+@media (max-width: 768px) {
+  #sectionLetsTalk {
+    .letsTalkContainer {
+      width: 90%;
+      marging: 0 auto;
+
+      .letsTalkItem {
+        margin-top: 5%;
+        &--headline {
+          text-align: center;
+          line-height: 1.5rem;
+
+        }
+
+        &--text {
+          text-align: center;
+
+        }
+
+        &--connect-row {
+          background-size: 20px 20px;
+          background-repeat: no-repeat;
+          background-position: 12% 10%;; // shifts image right from left edge
+
+          a {
+            font-weight: 500;
+          }
+        }
+
+        &--connect-row-phone {
+          margin-top: 5%;
+        }
+
+        &--action-row-button {
+          a {
+            padding: 1px 5px;
+          }
+        }
+      }
+    }
+  }
+
+}

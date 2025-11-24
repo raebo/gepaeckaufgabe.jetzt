@@ -1,0 +1,29 @@
+
+@media (max-width: 768px) {
+  #sectionBagage {
+    margin-top: 0;
+
+    #bagageWrapper {
+
+      #bagageHeadline {
+        h1 {
+          text-align: center;
+          line-height: 2.5rem;
+        }
+      }
+
+      .bagageContainer {
+        flex-direction: column;
+        height: auto;
+
+        .item {
+          &--text {
+            p {
+              padding-bottom: 2rem
+            }
+          }
+        }
+      }
+    }
+  }
+}

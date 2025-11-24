@@ -1,0 +1,30 @@
+
+@media (max-width: 768px) {
+  #sectionApproach{
+    margin-top: 0;
+
+    #approachWrapper {
+
+      #approachHeadline {
+        h1 {
+          text-align: center;
+          line-height: 2.5rem;
+        }
+      }
+
+      .approachContainer {
+        flex-direction: column;
+        height: auto;
+
+        .item {
+
+          &--text {
+            p {
+              padding-bottom: 2rem
+            }
+          }
+        }
+      }
+    }
+  }
+}

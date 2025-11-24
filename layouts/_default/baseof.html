@@ -11,6 +11,14 @@
     {{ .Title }} | {{ .Site.Title }}
     {{- end -}}
   </title>
+
+  {{ partial "cookie_consent.html" . }}
+  {{ $cookie := resources.Get "js/cookie-consent.js" | resources.ExecuteAsTemplate "cookie-consent.js" . | js.Build | minify | fingerprint }}
+  <script src="{{ $cookie.RelPermalink }}" defer></script>
+
+
+
+
   {{ $styles := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
 </head>

@@ -1,3 +1,7 @@
 baseURL = 'https://gepaeckaufgabe.jetzt/'
 languageCode = 'de-DE'
 title = 'Gepäckaufgabe.jetzt Coaching & Beratung'
+
+[params]
+  googleAnalyticsID = "G-XXXXXXX"
+

@@ -72,6 +72,9 @@
       .referencePic {
         flex: 1;
 
+        .reference_img_wrapper_mobile {
+          display: none;
+        }
         .reference_img_wrapper {
           height: 504px;       // 🔥 add height so wrapper isn’t 0!
           width: 100%;

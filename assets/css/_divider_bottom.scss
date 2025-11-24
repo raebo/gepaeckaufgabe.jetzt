@@ -13,16 +13,17 @@
     .dividerBottomItem {
       flex: 1;
 
+      &--image-mobile {
+        display: none;
+      }
+
       &--image {
         flex: 0 0 200px; /* flex-grow:0; flex-shrink:0; flex-basis:200px */
         background-image: url('/images/divider_luggage.png');
         background-size: contain; // Show all of the image
         background-repeat: no-repeat;
         background-position: left center;
-       // min-width: 100px; // Or whatever width your image actually needs
         height: 160px; // Or desired height; adjust to fit your design
-        //width: 80px;
-        //flex: 0 0 120px; // Prevent the image from stretching
         margin-right: 24px; // Space between image and text
       }
 

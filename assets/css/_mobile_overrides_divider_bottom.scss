@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+  #sectionDividerBottom {
+    margin-top: 0;
+    padding-top: 10%;
+    padding-bottom: 0;
+    max-height: 50vh;
+
+    #dividerBottomContainer {
+      flex-direction: column;
+
+      .dividerBottomItem {
+
+        &--image {
+          display: none;
+        }
+
+        &--image-mobile {
+          display: flex;
+          align-items: center;
+
+          .image_wrapper {
+            display: flex;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+          }
+        }
+
+        &--text {
+          h1 {
+            text-align: center;
+          }
+
+          h2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

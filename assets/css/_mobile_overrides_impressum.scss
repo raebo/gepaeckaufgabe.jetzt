@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  #sectionImpressum {
+
+    #impressumContainer {
+      #impressumHeadline {
+        margin: 5% 0;
+        h1 {
+          text-align: center;
+        }
+      }
+
+      .impressumWrapper {
+        flex-direction: column;
+
+        .impressumItem {
+          text-align: center;
+
+          &.impressumItem--first {
+
+          }
+
+          &.impressumItem--second {
+
+          }
+        }
+
+      }
+    }
+  }
+}
+

@@ -36,6 +36,14 @@ $body-color: #333;
 @import '_impressum';
 @import '_mobile_overrides_header';
 @import '_mobile_overrides_hero';
+@import '_mobile_overrides_baggage';
+@import '_mobile_overrides_approach';
+@import '_mobile_overrides_prices';
+@import '_mobile_overrides_references';
+@import '_mobile_overrides_personal';
+@import '_mobile_overrides_divider_bottom';
+@import '_mobile_overrides_lets_talk';
+@import '_mobile_overrides_impressum';
 
 // Mixins
 @mixin flex-center {

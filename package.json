@@ -1,16 +1,11 @@
 {
   "name": "gepaeckaufgabe.jetzt",
-  "version": "0.0.1",
+  "packageManager": "yarn@4.12.0",
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "gsap": "^3.12.0",
-    "@types/gsap": "^1.20.0"
+    "esbuild": "^0.27.0",
+    "typescript": "^5.9.3"
   },
   "scripts": {
-    "dev": "hugo server",
-    "build": "hugo --minify",
-    "type-check": "tsc --noEmit --project assets/ts/tsconfig.json",
-    "build:typescript": "tsc --project assets/ts/tsconfig.json"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "build:cookie": "esbuild assets/ts/cookie-consent.ts --bundle --outfile=assets/js/cookie-consent.js --minify --target=es2017"
+  }
 }
