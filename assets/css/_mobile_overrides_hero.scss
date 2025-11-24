@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+  #sectionHero {
+    max-height: 190vh;
+
+    #heroWrapper {
+      #heroFlexWrapper {
+        flex-direction: column;
+
+        .hero-item {
+          &.hero-item--image {
+            .img_wrapper {
+              width: 100%;
+            }
+          }
+
+          &.hero-item--text {
+            text-align: center;
+
+          .item-first-row {
+            h1 {
+              margin-top: 2rem;
+              line-height: 1.9rem;
+            }
+            h1:nth-of-type(2) {
+              margin-top: 2.5rem;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

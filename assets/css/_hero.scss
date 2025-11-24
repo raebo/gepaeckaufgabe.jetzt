@@ -1,61 +1,150 @@
 #sectionHero {
-  width: 100%;
+  background-color: $background-color-light;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: flex-start;       /* vertical centering */
+  max-height: 50vh;         /* full viewport height */
+  padding: 2rem;             /* optional spacing on smaller screens */
+  box-sizing: border-box;
+  margin-top: 6%;
 
-  #heroContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
-    flex: 1;
-    min-height: 600px;
-    width: 80%;
-    max-width: 1400px;
+  #heroWrapper {
+    max-width: 1200px;
+    margin-top: 5%;
+    width: 100%;
 
-    .hero-item {
-      &.hero-item--image {
-        background-image: url('/images/hero_wine_nature.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 600px;
-        //flex: 1 0 auto; // grow, don't shrink, base on auto height
-      }
+    #heroFlexWrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      flex-basis: 50%;
+      flex: 1;
+      min-height: 600px;
+      width: 100%;
+      justify-content: center;
+      align-items: stretch;  //both columns use the same height
 
-      &.hero-item--text {
+      .hero-item {
+        &.hero-item--image {
+          flex: 50%;
 
-        // Styles for text container
-        #heroContainerRight {
-          display: flex;
-          flex-direction: column;
+          .img_wrapper {
+            width: 90%;
+            height: 450px;
+            margin: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center 80%;
+              display: block;
+            }
+          }
+        }
 
-          .item {}
+        &.hero-item--text {
+          flex: 50%;
 
           .item-first-row {
-            h1 {}
+            h1 {
+              color: $color-important;
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 300;
+              font-size: $headline-font-size;
+              letter-spacing: 1px;
+            }
+            h1:nth-of-type(2) {
+              margin-top: 2.5rem;
+            }
           }
 
           .item-second-row {
-            h2 {}
+            margin-top: 2.5rem;
+
+            p {
+              font-size: 110%;
+              font-weight: bold;
+              line-height: 1.5rem;
+            }
           }
 
-          .item-third-row {}
+          .item-third-row {
+            margin-top: 2.5rem;
 
-          .item-fourth-row {}
+            p {
+              font-size: 100%;
+              line-height: 1.4rem;
+            }
+          }
 
-          .item-fifth-row {}
+          .item-fourth-row {
+            margin-top: 1.5rem;
+
+            p {
+              text-align: center;
+              font-style: italic;
+              font-size: 125%;
+              font-weight: 400;
+            }
+          }
+
+          .item-fifth-row {
+            margin-top: 1.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .link-left {
+              flex-basis: 30%;
+            }
+
+            .link-right {
+              flex-basis: 30%;
+              text-align: right;
+
+            }
+
+
+            a {
+              display: inline-block;
+              padding: 5px 0;
+              width: 180px;
+              text-align: center;
+              background-color: $color-action; // Or your preferred button color
+              color: #fff; // Or another accessible contrast color
+              border: none;
+              border-radius: 999px; // Fully rounded corners
+              text-decoration: none;
+              font-size: 1em;
+              font-weight: bold;
+              cursor: pointer;
+              transition: background 0.2s;
+
+              &:hover,
+              &:focus {
+                background-color: darken($color-important, 8%);
+                text-decoration: none;
+              }
+            }
+          }
         }
       }
+
     }
 
-  }
+    @media (max-width: 768px) {
+      #heroContainer {
+        flex-direction: column;
+      }
 
-  @media (max-width: 768px) {
-    #heroContainer {
-      flex-direction: column;
     }
-
   }
 }

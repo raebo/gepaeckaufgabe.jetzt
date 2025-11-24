@@ -1,0 +1,72 @@
+@media (max-width: 768px) {
+
+  #sectionHeader {
+    padding: 0;
+
+    header {
+
+      position: inherit;
+
+      // hide desktop header
+      .header-desktop {
+        display: none;
+      }
+
+      // mobile header
+      .header-mobile {
+        display: flex;
+        flex-direction: column; // stack logo and nav vertically
+        align-items: center;    // center horizontally
+        gap: 1rem;              // spacing between logo and nav
+
+        // logo styling
+        .mobile-logo {
+          .logo {
+            .header-image {
+              img {
+                max-width: 140px; // scale with screen
+                height: auto;
+              }
+            }
+          }
+        }
+
+        .claim {
+          text-align: center;
+          h1 {
+            font-weight: 700;
+            line-height: 1.4rem;
+          }
+          h2 {
+            font-weight: 500;
+          }
+        }
+
+        // nav styling
+        .mobile-nav {
+          width: 100%;          // full width
+          nav {
+            ul.mobile-nav {
+              display: flex;
+              flex-direction: column; // stack links vertically
+              align-items: center;
+              gap: 0.5rem;
+
+              li {
+                list-style: none;
+                a {
+                  text-decoration: none;
+                  color: inherit;
+                  font-weight: 700;
+                  font-size: 1rem;
+                  display: block;
+                  padding: 0.5rem 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

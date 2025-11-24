@@ -34,6 +34,8 @@ $body-color: #333;
 @import '_divider_bottom';
 @import '_lets_talk';
 @import '_impressum';
+@import '_mobile_overrides_header';
+@import '_mobile_overrides_hero';
 
 // Mixins
 @mixin flex-center {
@@ -209,46 +211,6 @@ main {
     @include responsive($breakpoint-md) {
       padding: $spacing-unit * 3 0;
       min-height: auto;
-    }
-  }
-
-  .hero-section {
-    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-    color: white;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
-      background-size: cover;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin-bottom: $spacing-unit * 1.5;
-      font-weight: 700;
-
-      @include responsive($breakpoint-md) {
-        font-size: 2.5rem;
-      }
-    }
-
-    p {
-      font-size: 1.25rem;
-      margin-bottom: $spacing-unit * 2;
-      opacity: 0.9;
     }
   }
 
