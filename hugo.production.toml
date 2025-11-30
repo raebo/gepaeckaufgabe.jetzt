@@ -1,0 +1,8 @@
+#baseURL = 'https://gepaeckaufgabe.jetzt/'
+baseURL = 'http://gepaeckaufgabe.jetzt'
+languageCode = 'de-DE'
+title = 'Gepäckaufgabe.jetzt Coaching & Beratung'
+
+[params]
+  googleAnalyticsID = "G-MPH7C3M2HN"
+
