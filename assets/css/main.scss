@@ -44,6 +44,7 @@ $body-color: #333;
 @import '_mobile_overrides_divider_bottom';
 @import '_mobile_overrides_lets_talk';
 @import '_mobile_overrides_impressum';
+@import '_mobile_tablet_overrides';
 
 // Mixins
 @mixin flex-center {

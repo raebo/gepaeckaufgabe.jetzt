@@ -5,10 +5,10 @@
   display: flex;
   justify-content: center;   /* horizontal centering */
   align-items: flex-start;       /* vertical centering */
-  max-height: 5vh;         /* full viewport height */
   padding: 2rem;             /* optional spacing on smaller screens */
   box-sizing: border-box;
-  margin-top: 6%;
+  margin-top: 8%;
+  min-height: 56vh;
 
   #heroWrapper {
     max-width: 1200px;

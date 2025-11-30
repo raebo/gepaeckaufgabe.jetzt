@@ -1,8 +1,8 @@
 #baseURL = 'https://gepaeckaufgabe.jetzt/'
-baseURL = './'
+baseURL = '/'
 languageCode = 'de-DE'
 title = 'Gepäckaufgabe.jetzt Coaching & Beratung'
 
 [params]
-  googleAnalyticsID = "G-XXXXXXX"
+  googleAnalyticsID = "G-XXXXXXXX"
 

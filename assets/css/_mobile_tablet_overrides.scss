@@ -1,0 +1,87 @@
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #sectionHeader {
+    header {
+      .header-desktop {
+        .nav-links {
+          gap: 0;
+        }
+      }
+    }
+  }
+
+  #sectionHero {
+    margin-top: 10%;
+    max-height: 47vh;
+
+    #heroWrapper {
+      #heroFlexWrapper {
+        .hero-item {
+
+          &.hero-item--text {
+            .item-first-row {
+              h1 {
+                font-size: 275%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #sectionBagage {
+    min-height: 40vh;
+
+    #bagageWrapper {
+      .bagageContainer {
+        
+        height: 375px;
+
+        .bagageItem {
+          .item--text {
+          }
+        }
+      }
+    }
+  }
+
+  #sectionApproach {
+    min-height: 50vh;
+
+    #approachWrapper {
+      .approachContainer {
+        min-height: 480px;
+      }
+    }
+  }
+
+  #sectionPrices {
+    min-height: 45vh;
+  }
+
+  #sectionReferences {
+
+    #referencesContainer {
+      #referencesWrapper .referencePic .reference_img_wrapper {
+      height: 625px;
+
+      }
+    }
+  }
+
+  #sectionPersonal {
+    min-height: 55vh;
+    padding: 4rem;
+
+    #personalWrapper {
+      #personalFlexWrapper {
+        .personalItem--img .img_wrapper {
+          height: 645px;
+        }
+      }
+    }
+  }
+
+
+}
