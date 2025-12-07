@@ -10,5 +10,8 @@
   "scripts": {
     "build:cookie": "esbuild assets/ts/cookie-consent.ts --bundle --outfile=assets/js/cookie-consent.js --minify --target=es2017",
     "deploy": "gh-pages -d public"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
   }
 }

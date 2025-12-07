@@ -1,5 +1,5 @@
 #baseURL = 'https://gepaeckaufgabe.jetzt/'
-baseURL = 'http://gepaeckaufgabe.jetzt'
+baseURL = 'https://gepaeckaufgabe.jetzt'
 languageCode = 'de-DE'
 title = 'Gepäckaufgabe.jetzt Coaching & Beratung'
 

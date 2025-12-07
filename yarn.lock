@@ -187,6 +187,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/fontawesome-free@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "@fortawesome/fontawesome-free@npm:7.1.0"
+  checksum: 10c0/3bcaf2c18f3b2ece0fb5640681f13051cb787d686ab444437b3605ba3dca9dce4c7c1f844d94b7ad011482ac20b2b387f3a4c33c2739b50c4425fe529ab7b050
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -455,6 +462,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "gepaeckaufgabe.jetzt@workspace:."
   dependencies:
+    "@fortawesome/fontawesome-free": "npm:^7.1.0"
     "@types/gh-pages": "npm:^6"
     esbuild: "npm:^0.27.0"
     gh-pages: "npm:^6.3.0"

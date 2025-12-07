@@ -14,6 +14,15 @@
 
   {{ $styles := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+
+  {{ $fa := resources.Get "vendor/fontawesome/css/all.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $fa.RelPermalink }}">
+
+
+
+  {{ $application := resources.Get "js/application.js" | js.Build |
+  minify | fingerprint }}
+  <script src="{{ $application.RelPermalink }}" defer></script>
 </head>
 
 <body>
@@ -31,7 +40,8 @@
   {{ partial "footer.html" . }}
   {{ partial "scripts.html" . }}
 
-  {{ $cookie := resources.Get "js/cookie-consent.js" | resources.ExecuteAsTemplate "cookie-consent.js" . | js.Build | minify | fingerprint }}
+  {{ $cookie := resources.Get "js/cookie-consent.js" | resources.ExecuteAsTemplate "cookie-consent.js" . | js.Build |
+  minify | fingerprint }}
   <script src="{{ $cookie.RelPermalink }}" defer></script>
 
 </body>
