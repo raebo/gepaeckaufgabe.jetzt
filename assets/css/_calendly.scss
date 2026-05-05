@@ -1,0 +1,33 @@
+#calendlyBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+
+  display: inline-block;
+  width: 440px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #c24d51;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+#calendlyBtn:hover {
+  background-color: #a83d41;
+}
+
+@media (max-width: 600px) {
+  #calendlyBtn {
+    width: calc(100% - 32px);
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+}
