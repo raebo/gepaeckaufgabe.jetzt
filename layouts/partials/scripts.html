@@ -19,6 +19,6 @@
 {{ $ts = $ts | fingerprint }}
 {{ end }}
 
-<script src="{{ $ts.RealPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $ts.Data.Integrity }}"{{ end }}></script>
+<script src="{{ $ts.RelPermalink }}" {{ if hugo.IsProduction }}integrity="{{ $ts.Data.Integrity }}"{{ end }}></script>
 
 <!-- Other scripts can go here -->

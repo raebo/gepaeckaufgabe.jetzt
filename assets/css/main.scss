@@ -6,6 +6,7 @@ $color-important: #000;
 $color-action: rgb(194, 77, 81);
 $background-color-light: rgb(241, 231, 214);
 $background-color-darker: rgb(232, 227, 222);
+$background-color-expectations: rgb(190, 179, 150);
 $spacing-unit: 1rem;
 $breakpoint-md: 768px;
 $content-color: rgb(61, 65, 118);
@@ -25,6 +26,7 @@ $body-color: #333;
 
 @import '_fonts';
 @import '_header';
+@import '_header_social_bar';
 @import '_hero';
 @import '_baggage';
 @import '_approach';

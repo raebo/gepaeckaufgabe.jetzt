@@ -1,6 +1,7 @@
 // Import other TS files
 import { initNavigation } from './components/navigation';
 import { initAnimations } from "./components/animations";
+import { initCalendly } from "./components/calendly";
 
 // Type definitions
 interface Section {
@@ -21,6 +22,7 @@ class App {
       this.detectSections();
       initNavigation();
       initAnimations();
+      initCalendly();
     });
   }
   
